@@ -215,7 +215,7 @@ public class TelaPrincipal extends JFrame {
         if (termo.isEmpty()) { carregarTabela(dao.listarTodos()); return; }
         List<Produto> resultado = dao.buscarPorNome(termo);
         carregarTabela(resultado);
-        status("Busca: " + resultado.size() + " produto(s) encontrado(s) para "" + termo + """);
+        status("Busca: " + resultado.size() + " produto(s) encontrado(s) para [" + termo + "]" );
     }
 
     private void carregarTabela(List<Produto> lista) {
